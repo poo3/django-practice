@@ -12,10 +12,12 @@ def home(request):
     'name': 'poo3',
     'age': '25'
   }
+  status = 20
   return render(request,'TemplateApp/home.html',context={
     'my_name': my_name,
     'favorites_mangas': favorites_mangas,
-    'my_info': my_info
+    'my_info': my_info,
+    'status': status
   })
 
 def sample1(request):
