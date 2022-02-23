@@ -1,0 +1,23 @@
+{% comment %}
+<h1>Name: {{my_name}}</h1>
+{% endcomment %} {% comment %}
+<h2>漫画: {{favorites_manga}}</h2>
+{% endcomment %} {% comment %}
+<h3>Age: {{my_info.age}}</h3>
+{% endcomment %}
+
+<ul>
+  {% for manga in favorites_mangas%}
+    <li>{{manga}}</li>
+  {% endfor %}
+</ul>
+
+{% if 'ONE PIECE' in favorites_mangas %}
+  <p>ONE PIECE好きですねー</p>
+{% elif 'NARUTO' in favorites_manages %}
+  <p>Lemonあります</p>
+{% endif %}
+
+{% if 'age' in my_info %}
+  <p>age in my_info</p>
+{% endif %}
