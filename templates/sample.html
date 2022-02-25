@@ -1,3 +1,6 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+
 <h1>{{name|upper}}</h1>
 <h1>{{page_url|urlize}}</h1>
 <p>{{bmi|floatformat}}</p>
@@ -11,3 +14,6 @@
   <p>filter</p>
   <h5>upper</h5>
 {% endfilter %}
+
+<a href="{% url 'template_app:home' first_name='poo3' last_name='dayo' %}">home</a>
+<img src="{% static 'sample.jpg' %}" alt="">
