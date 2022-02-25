@@ -5,8 +5,8 @@ def index(request):
   val = 'Value!!'
   return render(request,'TemplateApp/index.html',context={'value':'hello','val':val})
 
-def home(request):
-  my_name = 'poo3'
+def home(request,first_name,last_name):
+  my_name = first_name + last_name
   favorites_mangas = ['NARUTO','ONE PIECE','ATTACK ON TAITAN']
   my_info = {
     'name': 'poo3',
