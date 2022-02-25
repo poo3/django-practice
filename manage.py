@@ -3,6 +3,9 @@
 import os
 import sys
 
+# cacheを作らないようにする
+# https://qiita.com/Kobayashi2019/items/03e31ee50b924f428e71
+sys.dont_write_bytecode = True
 
 def main():
     """Run administrative tasks."""

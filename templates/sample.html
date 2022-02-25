@@ -1,5 +1,5 @@
 {% load static %}
-<link rel="stylesheet" href="{% static 'home.css' %}">
+<link rel="stylesheet" href="{% static 'download/home.css' %}">
 
 <h1>{{name|upper}}</h1>
 <h1>{{page_url|urlize}}</h1>
@@ -16,4 +16,4 @@
 {% endfilter %}
 
 <a href="{% url 'template_app:home' first_name='poo3' last_name='dayo' %}">home</a>
-<img src="{% static 'sample.jpg' %}" alt="">
+<img src="{% static 'download/sample.jpg' %}" alt="">
